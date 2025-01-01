@@ -5,7 +5,7 @@ dotenv.config();
 
 class Database {
   constructor() {
-    this.Pool = new Pool({
+    this.pool = new Pool({
       user: process.env.DB_USER,
       host: process.env.DB_HOST,
       database: process.env.DB_NAME,
@@ -16,7 +16,7 @@ class Database {
 
   async connect() {
     try {
-      await this.Pool.connect();
+      await this.pool.connect();
       console.log("Connected to database");
     } catch (error) {
       console.error("Error connecting to database:", error);
@@ -25,7 +25,7 @@ class Database {
 
   async getAll() {
     try {
-      const res = await this.Pool.query("SELECT * FROM users");
+      const res = await this.pool.query("SELECT * FROM users");
       return res.rows;
     } catch (error) {
       console.error("Error executing query:", error);
