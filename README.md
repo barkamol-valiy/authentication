@@ -29,7 +29,7 @@ This project implements a secure backend system for user authentication and auth
 1. **Clone the Repository**
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/barkamol-valiy/authentication.git
 cd auth
 ```
 
@@ -163,4 +163,4 @@ Feel free to submit issues or pull requests to improve this project.
 
 ## Contact
 
-For any inquiries or issues, please contact the author at `<your-email>`.
+For any inquiries or issues, please contact the author at `barkamol.valiy@gmail.com`.
