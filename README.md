@@ -31,6 +31,6 @@ This project implements a secure backend system for user authentication and auth
 1. **Clone the Repository**
 
 ```bash
-git clone < https://github.com/barkamol-valiy/authentication.git >
+git clone <https://github.com/barkamol-valiy/authentication.git>
 cd auth
 ```
