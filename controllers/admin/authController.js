@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const admin = require("../../models/adminModel/admin.model");
+const admin = require("../../models/adminModel/adminModel");
 const dotenv = require("dotenv");
 
 dotenv.config();
@@ -48,6 +48,7 @@ async function login(req, res) {
       jwtSecret,
       { expiresIn: process.env.EXPIRES_IN || "1h" }
     );
+    res.json({ message: "Login successful", token });
   } catch (error) {
     console.error("Error logging in admin:", error);
     res.status(500).send("Internal server error"); // - Send a 500 status code}

@@ -1,7 +1,6 @@
 const express = require("express");
 const AdminRoute = express.Router();
-const adminAuth = require("../../controllers/admin/adminAuth"); // - Import the adminAuth controller
-const aythMid = require("../../middleware/admin/authMiddle"); // - authenication middleware
+const adminAuth = require("../../controllers/admin/authController");
 const authMiddleware = require("../../middleware/admin/authMiddle");
 
 AdminRoute.post("/signup", adminAuth.signup);
